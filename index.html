@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Reservation form </title>
+
+    <!--bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Font -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!--Owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.min.css">
+    <!--main css files -->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+
+    <!-- Start of Main  area-->
+    <main id="reserve_form">
+
+        <div class="form-container">
+
+            <form action="" class="p-4">
+                
+                <div id="step-1">
+                    <h6 class="light mb-4 text-muted"> Wählen Sie Ihren Haarkünstler </h6>
+                    <div class="artists d-flex flex-column justify-content-center">
+
+                        <div class="img-container d-flex align-items-center">
+                            <img id="artist-1" src="img/hair-artist-1.jpg" alt="hair-artist-1">
+                            <div>
+                                <label for="artist-1" class="mb-0 d-block">Artist 1</label>
+                                <small class="text-muted">Der Perfektionist</small>
+                            </div>
+                        </div>
+
+                        <div class="img-container d-flex align-items-center">
+                            <img id="artist-2" src="img/hair-artist-2.jpg" alt="hair-artist-2">
+                            <div>
+                                <label for="artist-2" class="mb-0 d-block">Artist 2</label>
+                                <small class="text-muted">Der Perfektionist</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    
+                <div id="step-2">
+                    <h6 class="light mb-4 text-muted"> Wählen Sie Ihren Service </h6>
+                    <div class="services-container">
+
+                        <div class="services service-1">
+                            <div class="d-flex align-items-center">
+                                <img src="img/hairstyle.svg" width="60" height="60" alt="hair-style">
+                                <h5 class="service-name ml-1">Haircut</h5>
+                            </div>
+                            <h5 class="cost text-muted">
+                                18 Euro
+                            </h5>
+                        </div>
+
+                        <div class="services service-2">
+                            <div class="d-flex align-items-center">
+                                <img src="img/hairstyle.svg" width="60" height="60" alt="hair-style">
+                                <h5 class="service-name ml-1">Haircut</h5>
+                            </div>
+                            <h5 class="cost text-muted">
+                                18 Euro
+                            </h5>
+                        </div>
+
+                        <div class="services service-3">
+                            <div class="d-flex align-items-center">
+                                <img src="img/hairstyle.svg" width="60" height="60" alt="hair-style">
+                                <h5 class="service-name ml-1">Haircut</h5>
+                            </div>
+                            <h5 class="cost text-muted">
+                                18 Euro
+                            </h5>
+                        </div>
+
+                        <div class="services service-4">
+                            <div class="d-flex align-items-center">
+                                <img src="img/hairstyle.svg" width="60" height="60" alt="hair-style">
+                                <h5 class="service-name ml-1">Haircut</h5>
+                            </div>
+                            <h5 class="cost text-muted">
+                                18 Euro
+                            </h5>
+                        </div>
+
+                        <div class="services service-5">
+                            <div class="d-flex align-items-center">
+                                <img src="img/hairstyle.svg" width="60" height="60" alt="hair-style">
+                                <h5 class="service-name ml-1">Haircut</h5>
+                            </div>
+                            <h5 class="cost text-muted">
+                                18 Euro
+                            </h5>
+                        </div>
+
+                        <div class="services service-6">
+                            <div class="d-flex align-items-center">
+                                <img src="img/hairstyle.svg" width="60" height="60" alt="hair-style">
+                                <h5 class="service-name ml-1">Haircut</h5>
+                            </div>
+                            <h5 class="cost text-muted">
+                                18 Euro
+                            </h5>
+                        </div>
+
+                    </div>
+                </div>
+    
+                <div id="step-3">
+                    <h6 class="light mb-4 text-muted"> Wählen Sie Ihre Zeitspanne </h6>
+                    <div class="date">
+                        <div class="input-container">
+                            <label for="">Date picker</label>
+                            <div class="input-group date" data-provide="datepicker">
+                                <input type="text" class="form-control">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-th"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="step-4">
+                    <h6 class="light mb-4 text-muted"> Choose your timespan </h6>
+                    <div class="times-container">
+                        <span class="times">9-10</span>
+                        <span class="times">10-11</span>
+                        <span class="times">11-12</span>
+                        <span class="times">12-13</span>
+                        <span class="times">13-14</span>
+                        <span class="times disabled">17-18</span>
+                        <span class="times">18-19</span>
+                        <span class="times">19-20</span>
+                        <span class="times">20-21</span>
+                        <span class="times">21-22</span>
+                        <span class="times disabled">22-23</span>
+                    </div>
+                </div>
+    
+    
+                <div id="step-5">
+                    <h6 class="light mb-4 text-muted"> Your Information </h6>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="client_fname">First Name</label>
+                                <input id="client_fname" required class="form-control" type="text" placeholder="John">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="client_lname">Last Name</label>
+                                <input id="client_lname" required class="form-control" type="text" placeholder="Doe">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="client_email">Email</label>
+                                <input id="client_email" required class="form-control" type="email" placeholder="John.Doe@gmail.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="client_number">Phone Number</label>
+                                <input id="client_number" required class="form-control" type="number" placeholder="03654790568">
+                            </div>
+                            <div class="col-12">
+                                <label for="client_description">Description</label>
+                                <textarea id="client_description" class="form-control" placeholder="if you have something in your mind please wrtie it down here" rows="2"></textarea>
+                            </div>
+                            <div class="col-12 mt-1">
+                                <button class="our-btn our-btn-inline mt-4" type="submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+    
+                
+
+            </form>
+
+            <div class="form-footer">
+                <button class="our-btn our-btn-inline previous mr-auto" onclick="prev()">Previous</button>
+                <button class="our-btn our-btn-inline next ml-auto" onclick="next()">Next <img src="img/source_icons_arrow-left 5.svg" width="20" height="20" alt="arrow-left"> </button>
+            </div>
+
+        </div>
+        
+    </main>
+    <!-- End of Main area -->
+
+    <!--jQuery and popper -->
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!--bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--Owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+
+        $('.datepicker').datepicker();
+
+
+        let step_counter = 1;
+
+        $('.previous').fadeOut(0);
+
+        function next(){
+
+            if(step_counter == 1){
+                $('#step-1').fadeOut(0);
+                $('#step-2').fadeIn(400);
+                step_counter++;
+            }
+
+            else if (step_counter == 2){
+                $('#step-2').fadeOut(0);
+                $('#step-3').fadeIn(400);
+                step_counter++;
+            }
+
+            else if (step_counter == 3){
+                step_counter++;
+                $('#step-3').fadeOut(0);
+                $('#step-4').fadeIn(400);
+            }
+
+            else if (step_counter == 4){
+                $('#step-4').fadeOut(0);
+                $('#step-5').fadeIn(400);
+                step_counter = 5;
+                $('.next').fadeOut(0);
+            }
+
+            if(step_counter != 5){
+                $('.next').fadeIn(0);
+            }
+            if(step_counter != 1){
+                $('.previous').fadeIn(0);
+            }
+
+        }
+
+        function prev(){
+
+            if(step_counter == 5){
+                step_counter--;
+                $('#step-4').fadeIn(400);
+                $('#step-5').fadeOut(0);
+            }
+
+            else if (step_counter == 4){
+                step_counter--;
+                $('#step-3').fadeIn(400);
+                $('#step-4').fadeOut(0);
+            }
+            else if (step_counter == 3){
+                step_counter--;
+                $('#step-2').fadeIn(400);
+                $('#step-3').fadeOut(0);
+            }
+            else if (step_counter == 2){
+                step_counter--;
+                $('#step-1').fadeIn(400);
+                $('#step-2').fadeOut(0);
+                $('.previous').fadeOut(0);
+            }
+
+            if(step_counter != 5){
+                $('.next').fadeIn(0);
+            }
+            if(step_counter != 1){
+                $('.previous').fadeIn(0);
+            }
+
+        }
+
+        $('#step-1 .img-container').click(function(){
+            $('.img-container').removeClass('active-artist');
+            $(this).addClass('active-artist');
+        });
+
+
+        $('#step-2 .services').click(function(){
+            $('.services').removeClass('active-service');
+            $(this).addClass('active-service');
+        });
+
+        $('#step-4 .times').click(function(){
+            $('.times').removeClass('active-time');
+            $(this).addClass('active-time');
+        });
+
+        $('#step-4 .times.disabled').click(function(){
+            $(this).removeClass('active-time');
+        });
+
+
+    </script>
+
+</body>
+
+</html>
